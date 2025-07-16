@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash</title>
+
+</head>
+<style> 
+    *{
+        padding: 0%;
+        margin: 0%;
+        box-sizing: border-box;
+
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(192, 196, 196);
+       
+    }
+    main{
+        padding: 10px;
+     
+    }
+   form{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    input{
+       width: 70%;
+       padding: 10px;
+       outline: none;
+       border: 1px solid rgb(15, 15, 15);
+       border-radius: 100px;
+       
+    }
+    button{
+       padding: 5px;
+       /* border-radius: 2px solid black;   */
+       border-radius: 100px;
+       padding: 20px 20px ;
+       width: 100px;
+    }
+   }
+   .image-main{
+    padding: 10px 40px ;
+    column-count: 3;
+    column-gap: 15px;
+   }
+    .image{
+        break-inside: avoid;
+        margin-bottom: 15px;
+        width: 100%;
+
+        > img{
+           width: 100%;
+           height: auto; 
+           display: block;
+           object-fit: cover;
+        }
+    }
+
+.loadmore{
+    padding: 10px 40px ;
+
+    button{
+        width: 100%;
+        padding: 15px;
+        background-color: transparent;
+        border: 2px solid black;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight:bolder ;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+        
+    }
+}
+
+</style>
+<body>
+
+    <main> 
+
+       
+       <form >  
+       <input  type="text" placeholder="search image">  
+       <button type="submit"> Search </button>   
+        </form>   
+
+<div  class="image-main">
+
+</div>
+<div class="loadmore">
+    <button> LOAD MORE </button> 
+ 
+ </div>
+ </main>
+
+
+    <script src="./image.js"> </script>
+</body>
+</html>
